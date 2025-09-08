@@ -7,7 +7,6 @@ const FeaturesProjects = async () => {
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
-
         </div>
     )
 }

@@ -6,26 +6,26 @@ import {
     NavigationMenuList,
 } from "@/components/ui/navigation-menu"
 import Link from 'next/link'
+import { APPLICATION_ROUTES } from '@/lib/client/routesConfig'
 const Navbar = () => {
     return (
         <nav className='font-medium'>
             <NavigationMenu>
                 <NavigationMenuList >
-
-
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
                             <Link href="/docs">Projects</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
+
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href="/docs">Service</Link>
+                            <Link href="/docs">Pricing</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href="/docs">Pricing</Link>
+                            <Link href={APPLICATION_ROUTES.services}>Service</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
@@ -35,12 +35,12 @@ const Navbar = () => {
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href="/docs">About</Link>
+                            <Link href={APPLICATION_ROUTES.about}>About</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href="/docs">Contact</Link>
+                            <Link href={APPLICATION_ROUTES.contact}>Contact</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                 </NavigationMenuList>

@@ -9,7 +9,7 @@ import { Badge } from '../ui/badge'
 
 const ProjectCard = () => {
     return (
-        <Card className='py-2  hover:translate-y-1 transition-all duration-500'>
+        <Card className='py-2 hover:-translate-y-1 transition-all duration-700'>
             <CardContent className='px-2'>
                 <div className='h-60 rounded-t-md overflow-hidden'>
                     <Image src={project1} alt='project image' className='object-cover h-full' />

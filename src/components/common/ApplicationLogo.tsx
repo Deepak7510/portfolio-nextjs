@@ -1,4 +1,5 @@
 // import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const ApplicationLogo = () => {
@@ -7,9 +8,9 @@ const ApplicationLogo = () => {
             {/* <div className='h-10 w-40'>
                 <Image src={ } fill />
             </div> */}
-            <h1 className='text-2xl font-bold'>
+            <Link href={'/'} className='text-2xl font-bold'>
                 DevNexa
-            </h1>
+            </Link>
         </div>
 
     )
