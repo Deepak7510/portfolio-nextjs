@@ -17,16 +17,16 @@ const HomePage = () => {
                 <HeroSection />
             </section>
 
-            <section className='w-full px-2 md:px-20 my-10 relative'>
+            <section className='w-full px-2 md:px-20 mb-15 mt-10 relative'>
                 <CompilerSection />
             </section>
-            <section className='w-full px-2 md:px-20 my-10 relative'>
+            <section className='w-full px-2 md:px-20 my-15 relative'>
                 <FeaturesProjectSection>
                     <FeaturesProjects />
                 </FeaturesProjectSection>
             </section>
 
-            <section className='w-full px-2 md:px-20 my-10 relative'>
+            <section className='w-full px-2 md:px-20 my-15 relative'>
                 <AboutMe />
             </section>
         </>

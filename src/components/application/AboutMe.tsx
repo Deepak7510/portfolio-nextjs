@@ -48,7 +48,7 @@ const AboutMe = () => {
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
                 className='w-full'>
-                <Card className='border-green-100 dark:border-green-700 bg-green-50 dark:bg-green-900/20'>
+                <Card className='border-purple-100 dark:border-purple-700 bg-purple-50 dark:bg-purple-900/20'>
                     <CardContent className='flex justify-between w-full gap-4'>
                         <div className='p-5 w-[70%] space-y-6'>
                             <div className='flex gap-4 items-center'>
