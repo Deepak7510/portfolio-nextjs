@@ -75,9 +75,6 @@ const HeroSection = () => {
 
     }, [currentColorIndex, ref])
 
-    console.log(currentColorIndex)
-
-
 
     return (
         <div className='w-full flex flex-col gap-6 justify-center text-center items-center'>
@@ -107,7 +104,7 @@ const HeroSection = () => {
                 viewport={{ once: true }}
 
                 className='md:text-xl max-w-2xl'>
-                I create fast, scalable, and visually stunning web and mobile applications that help businesses and individuals grow online.
+                I create fast, scalable, and visually stunning web applications that help businesses and individuals grow online.
             </motion.p>
 
             <motion.div

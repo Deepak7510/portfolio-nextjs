@@ -8,8 +8,10 @@ import AboutMe from '@/components/application/AboutMe'
 import ProcessSection from '@/components/application/ProcessSection'
 import AboutDevNexaSection from '@/components/application/AboutDevNexaSection'
 import OurTeamSection from '@/components/application/OurTeamSection'
-const HomePage = () => {
+import { DevelopmentRoadmapSection } from '@/components/application/DevelopmentRoadmapSection'
+import { SolutionSection } from '@/components/application/SolutionSection'
 
+const HomePage = () => {
 
     return (
         <>
@@ -17,6 +19,16 @@ const HomePage = () => {
             <section className='w-full px-3 md:px-10 xl:px-20 pt-20 pb-3 relative'>
                 <Button variant={"secondary"} className='dark:border-slate-700 animate-bounce rounded-full absolute top-4 right-4'>Download CV</Button>
                 <HeroSection />
+            </section>
+
+            <section className='w-full px-3 md:px-10 xl:px-20 mb-15 mt-10'>
+                <DevelopmentRoadmapSection />
+            </section>
+
+            <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
+                <FeaturesProjectSection>
+                    <FeaturesProjects />
+                </FeaturesProjectSection>
             </section>
 
             <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
@@ -27,10 +39,8 @@ const HomePage = () => {
                 <ProcessSection />
             </section>
 
-            <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
-                <FeaturesProjectSection>
-                    <FeaturesProjects />
-                </FeaturesProjectSection>
+            <section className='w-full px-3 md:px-10 xl:px-20 mb-15 mt-10'>
+                <SolutionSection />
             </section>
 
             <section className='w-full px-3 md:px-10 xl:px-20 mb-15 mt-10'>

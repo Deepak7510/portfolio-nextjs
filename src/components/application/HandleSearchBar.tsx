@@ -5,7 +5,6 @@ import { Button } from '../ui/button'
 import { Search, XIcon } from 'lucide-react'
 
 const HandleSearchBar = () => {
-
     const [openSearchBar, setOpenSearchBar] = useState<boolean>(false)
 
     function handleOpenSearchBar() {

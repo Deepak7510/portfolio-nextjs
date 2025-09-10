@@ -12,7 +12,6 @@ import Autoplay from "embla-carousel-autoplay"
 import { Code, Rocket, TrendingUp } from "lucide-react";
 import { Separator } from '../ui/separator';
 
-
 export type approachDataType = {
     id: number;
     title: string;
@@ -47,7 +46,6 @@ const approachData: approachDataType[] = [
         color: "border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20", // Blue
     },
 ];
-
 
 const ProcessSection = () => {
 
@@ -102,10 +100,8 @@ const ProcessSection = () => {
                                             <div className="p-1">
                                                 <Card className={`${item.color}`}>
                                                     <CardContent className="space-y-1 md:space-y-2">
-                                                        <div className='border w-fit p-2 rounded-full'>
-                                                            {
-                                                                <item.icon />
-                                                            }
+                                                        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow">
+                                                            <item.icon className="w-5 h-5 text-indigo-600" />
                                                         </div>
                                                         <h2 className='text-xl font-semibold'>{item.title}</h2>
                                                         <p className='text-sm'>{item.description}</p>
@@ -128,7 +124,6 @@ const ProcessSection = () => {
                     </CardContent>
                 </Card>
             </motion.div>
-
         </div>
     )
 }

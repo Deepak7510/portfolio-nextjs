@@ -16,9 +16,7 @@ const ProfileMenu = () => {
                     </Avatar>
                     :
                     <Button className='' variant={"ghost"} size={"sm"}>Sign In</Button>
-
             }
-
         </div>
     )
 }

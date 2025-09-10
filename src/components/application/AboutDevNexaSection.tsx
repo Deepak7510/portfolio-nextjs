@@ -9,7 +9,8 @@ import {
     CarouselItem,
 } from '../ui/carousel';
 import Autoplay from "embla-carousel-autoplay"
-
+import { Users, Laptop, BarChart3 } from "lucide-react";
+import { Separator } from '../ui/separator';
 
 export type aboutDevNexaDataType = {
     id: number;
@@ -18,9 +19,6 @@ export type aboutDevNexaDataType = {
     icon: React.ElementType;
     color: string;
 };
-
-import { Users, Laptop, BarChart3 } from "lucide-react";
-import { Separator } from '../ui/separator';
 
 const aboutDevNexaData: aboutDevNexaDataType[] = [
     {
@@ -68,7 +66,6 @@ const AboutDevNexaSection = () => {
         }),
     };
 
-
     return (
         <div className='flex flex-col justify-center items-center gap-4 md:gap-7'>
             <motion.h1 custom={0}
@@ -115,10 +112,8 @@ const AboutDevNexaSection = () => {
                                             <div className="p-1">
                                                 <Card className={`${item.color}`}>
                                                     <CardContent className="space-y-1 md:space-y-2">
-                                                        <div className='border w-fit p-2 rounded-full'>
-                                                            {
-                                                                <item.icon />
-                                                            }
+                                                        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow">
+                                                            <item.icon className="w-5 h-5 text-indigo-600" />
                                                         </div>
                                                         <h2 className='text-xl font-semibold'>{item.title}</h2>
                                                         <p className='text-sm'>{item.description}</p>
@@ -133,9 +128,6 @@ const AboutDevNexaSection = () => {
                     </CardContent>
                 </Card>
             </motion.div>
-
-
-
         </div>
     )
 }

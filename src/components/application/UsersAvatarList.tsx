@@ -39,5 +39,4 @@ const UsersAvatarList = () => {
     )
 }
 
-
 export default UsersAvatarList

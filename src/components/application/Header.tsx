@@ -6,7 +6,6 @@ import ProfileMenu from './ProfileMenu'
 import HandleSearchBar from './HandleSearchBar'
 import { ModeToggle } from '../common/ModeToggle'
 import useWindowSize from '@/hook/useWindowSize'
-
 import { Button } from "@/components/ui/button"
 import {
     Sheet,
@@ -62,9 +61,6 @@ const Header = () => {
                     }
                 </div>
             </div>
-
-
-
         </header>
     )
 }
