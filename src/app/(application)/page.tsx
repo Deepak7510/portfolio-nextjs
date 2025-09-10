@@ -14,7 +14,7 @@ const HomePage = () => {
     return (
         <>
             {/* hero section  */}
-            <section className='w-full px-3 md:px-10 xl:px-20 py-16 relative'>
+            <section className='w-full px-3 md:px-10 xl:px-20 pt-20 pb-3 relative'>
                 <Button variant={"secondary"} className='dark:border-slate-700 animate-bounce rounded-full absolute top-4 right-4'>Download CV</Button>
                 <HeroSection />
             </section>

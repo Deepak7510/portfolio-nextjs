@@ -11,36 +11,36 @@ const Navbar = () => {
     return (
         <nav className='font-medium'>
             <NavigationMenu >
-                <NavigationMenuList className='flex-col md:flex-row items-start md:justify-center' >
+                <NavigationMenuList className='flex-col gap-3 md:gap-0 md:flex-row items-start md:justify-center' >
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href="/docs">Projects</Link>
+                            <Link className='text-lg md:text-sm' href="/docs">Projects</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
 
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href="/docs">Pricing</Link>
+                            <Link className='text-lg md:text-sm' href="/docs">Pricing</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href={APPLICATION_ROUTES.services}>Service</Link>
+                            <Link className='text-lg md:text-sm' href={APPLICATION_ROUTES.services}>Service</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href="/docs">Blogs</Link>
+                            <Link className='text-lg md:text-sm' href="/docs">Blogs</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href={APPLICATION_ROUTES.about}>About</Link>
+                            <Link className='text-lg md:text-sm' href={APPLICATION_ROUTES.about}>About</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link href={APPLICATION_ROUTES.contact}>Contact</Link>
+                            <Link className='text-lg md:text-sm' href={APPLICATION_ROUTES.contact}>Contact</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                 </NavigationMenuList>

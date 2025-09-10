@@ -29,16 +29,16 @@ type typeOfSkill = {
 }
 
 const skills: typeOfSkill[] = [
-    { id: 1, name: "Frontend", color: "bg-gradient-to-r from-pink-500 to-yellow-500 scale-105", icon: Code2 },
-    { id: 2, name: "Backend", color: "bg-gradient-to-r from-blue-500 to-purple-500 scale-105", icon: Server },
-    { id: 3, name: "Database", color: "bg-gradient-to-r from-green-400 to-cyan-500 scale-105", icon: Database },
-    { id: 4, name: "Deployment", color: "bg-gradient-to-r from-indigo-500 to-sky-500 scale-105", icon: Cloud },
-    { id: 5, name: "UI/UX", color: "bg-gradient-to-r from-orange-400 to-pink-600 scale-105", icon: Palette },
-    { id: 6, name: "DevOps", color: "bg-gradient-to-r from-teal-500 to-lime-500 scale-105", icon: Workflow },
-    { id: 7, name: "Restful API", color: "bg-gradient-to-r from-red-400 to-pink-500 scale-105", icon: Network },
-    { id: 8, name: "Testing", color: "bg-gradient-to-r from-sky-400 to-indigo-500 scale-105", icon: Bug },
-    { id: 9, name: "Security", color: "bg-gradient-to-r from-green-600 to-gray scale-105", icon: Shield },
-    { id: 10, name: "SEO", color: "bg-gradient-to-r from-green-600 to-gray scale-105", icon: Shield },
+    { id: 1, name: "Frontend", color: "bg-gradient-to-r from-pink-500 to-yellow-500 scale-95 md:scale-105", icon: Code2 },
+    { id: 2, name: "Backend", color: "bg-gradient-to-r from-blue-500 to-purple-500 scale-95 md:scale-105", icon: Server },
+    { id: 3, name: "Database", color: "bg-gradient-to-r from-green-400 to-cyan-500 scale-95 md:scale-105", icon: Database },
+    { id: 4, name: "Deployment", color: "bg-gradient-to-r from-indigo-500 to-sky-500 scale-95 md:scale-105", icon: Cloud },
+    { id: 5, name: "UI/UX", color: "bg-gradient-to-r from-orange-400 to-pink-600 scale-95 md:scale-105", icon: Palette },
+    { id: 6, name: "DevOps", color: "bg-gradient-to-r from-teal-500 to-lime-500 scale-95 md:scale-105", icon: Workflow },
+    { id: 7, name: "Restful API", color: "bg-gradient-to-r from-red-400 to-pink-500 scale-95 md:scale-105", icon: Network },
+    { id: 8, name: "Testing", color: "bg-gradient-to-r from-sky-400 to-indigo-500 scale-95 md:scale-105", icon: Bug },
+    { id: 9, name: "Security", color: "bg-gradient-to-r from-green-600 to-gray scale-95 md:scale-105", icon: Shield },
+    { id: 10, name: "SEO", color: "bg-gradient-to-r from-green-600 to-gray scale-95 md:scale-105", icon: Shield },
 ];
 
 const HeroSection = () => {
@@ -80,14 +80,14 @@ const HeroSection = () => {
 
 
     return (
-        <div className='w-full flex flex-col gap-5 justify-center text-center items-center'>
+        <div className='w-full flex flex-col gap-6 justify-center text-center items-center'>
             <motion.p
                 custom={0}
                 initial={textVariants.hidden}
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
             >
-                <Badge variant="secondary" className='text-sm xl:text-base font-medium rounded-full px-5'><Crown className='h-4! w-4!' /> <span>Hii I&apos;m Deepak Kumar Yadav →</span></Badge>
+                <Badge variant="secondary" className='text-sm md:text-base font-medium rounded-full px-5'><Crown className='h-4! w-4!' /> <span>Hii I&apos;m Deepak Kumar Yadav →</span></Badge>
             </motion.p>
 
             <motion.h1
@@ -96,7 +96,7 @@ const HeroSection = () => {
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
 
-                className='font-extrabold text-3xl md:text-4xl xl:text-5xl'>
+                className='font-extrabold text-3xl md:text-4xl xl:text-6xl'>
                 Powerful Web Solutions, Clean & Modern
             </motion.h1>
 
@@ -119,7 +119,7 @@ const HeroSection = () => {
                 className=' flex gap-4 items-center justify-center flex-wrap max-w-2xl'>
                 {
                     skills?.map((item, index) => {
-                        return <Badge variant={"outline"} key={item.id} className={`rounded-full text-sm md:text-base h-10 px-6 ${index === currentColorIndex && item.color} `}> {<item.icon className="h-3! md:h-4! w-3! md:w-4!" />}&nbsp;{item.name}</Badge>
+                        return <Badge variant={"outline"} key={item.id} className={`rounded-full text-sm md:text-base h-8 md:h-10 px-6 ${index === currentColorIndex && item.color} `}> {<item.icon className="h-3! md:h-4! w-3! md:w-4!" />}&nbsp;{item.name}</Badge>
                     })
                 }
             </motion.div>
