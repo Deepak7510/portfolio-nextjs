@@ -16,8 +16,11 @@ const useWindowSize = function () {
   }, [])
 
   useEffect(() => {
-    window?.addEventListener("resize", (e: UIEvent) => {
-      console.log(e);
+    window?.addEventListener("resize", () => {
+      setSize({
+        height: window?.innerHeight || 0,
+        width: window?.innerWidth || 0,
+      })
     });
 
     return () => {

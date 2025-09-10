@@ -87,7 +87,7 @@ const HeroSection = () => {
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
             >
-                <Badge variant="secondary" className='text-base font-medium rounded-full px-5'><Crown className='h-4! w-4!' /> <span>Hii I&apos;m Deepak Kumar Yadav →</span></Badge>
+                <Badge variant="secondary" className='text-sm xl:text-base font-medium rounded-full px-5'><Crown className='h-4! w-4!' /> <span>Hii I&apos;m Deepak Kumar Yadav →</span></Badge>
             </motion.p>
 
             <motion.h1
@@ -96,8 +96,8 @@ const HeroSection = () => {
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
 
-                className='font-bold text-3xl md:text-4xl xl:text-5xl'>
-                Powerful Web & App Solutions, Clean & Modern
+                className='font-extrabold text-3xl md:text-4xl xl:text-5xl'>
+                Powerful Web Solutions, Clean & Modern
             </motion.h1>
 
             <motion.p
@@ -119,7 +119,7 @@ const HeroSection = () => {
                 className=' flex gap-4 items-center justify-center flex-wrap max-w-2xl'>
                 {
                     skills?.map((item, index) => {
-                        return <Badge variant={"outline"} key={item.id} className={`rounded-full text-base h-8 md:h-9 xl:h-10 px-6 ${index === currentColorIndex && item.color} `}> {<item.icon className="h-4! w-4!" />}&nbsp;{item.name}</Badge>
+                        return <Badge variant={"outline"} key={item.id} className={`rounded-full text-sm md:text-base h-10 px-6 ${index === currentColorIndex && item.color} `}> {<item.icon className="h-3! md:h-4! w-3! md:w-4!" />}&nbsp;{item.name}</Badge>
                     })
                 }
             </motion.div>
@@ -133,9 +133,8 @@ const HeroSection = () => {
 
             >
                 <Card className='w-full border-blue-100 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 max-w-3xl xl:max-w-4xl py-3.5'>
-                    <CardContent className='flex flex-col justify-center items-center gap-2'>
-                        {/* <h2 className='font-bold text-2xl'>Who Am I?</h2> */}
-                        <h2 className='font-semibold text-xl md:text-2xl'>Empowering Through Code, Learning Every Day</h2>
+                    <CardContent className='flex flex-col justify-center items-center gap-1.5 xl:gap-2'>
+                        <h2 className='font-semibold text-lg md:text-2xl'>Empowering Through Code, Learning Every Day</h2>
                         <p className='text-xs md:text-sm'>I believe coding is more than just writing programs — it&apos;s about problem-solving, creativity, and growth. From building projects to contributing in teams, I&apos;m on a mission to grow as a developer and help others.</p>
                         <Button size={"sm"} className='px-5 md:px-8 xl:px-10 rounded-full animate-pulse'>Let&apos;s Connect →</Button>
                     </CardContent>

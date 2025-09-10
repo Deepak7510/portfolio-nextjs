@@ -27,7 +27,7 @@ const OurTeamSection = () => {
     };
 
     return (
-        <div className='flex flex-col justify-center items-center gap-7'>
+        <div className='flex flex-col justify-center items-center gap-4 md:gap-7'>
             <motion.h1 custom={0}
                 initial={textVariants.hidden}
                 whileInView={textVariants.visible}
@@ -51,7 +51,7 @@ const OurTeamSection = () => {
                     plugins={[
                         Autoplay({
                             delay: 2000,
-                            stopOnInteraction: false, // ✅ autoplay kabhi rukega nahi
+                            stopOnInteraction: false,
                         }),
                     ]}
                     className="w-full">

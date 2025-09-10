@@ -19,29 +19,29 @@ const HomePage = () => {
                 <HeroSection />
             </section>
 
-            <section className='w-full px-3 md:px-10 xl:px-20 mb-15 mt-10'>
-                <CompilerSection />
+            <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
+                <AboutDevNexaSection />
             </section>
 
-            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
+            <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
+                <ProcessSection />
+            </section>
+
+            <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
                 <FeaturesProjectSection>
                     <FeaturesProjects />
                 </FeaturesProjectSection>
             </section>
 
-            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
-                <ProcessSection />
+            <section className='w-full px-3 md:px-10 xl:px-20 mb-15 mt-10'>
+                <CompilerSection />
             </section>
 
-            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
-                <AboutDevNexaSection />
-            </section>
-
-            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
+            <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
                 <OurTeamSection />
             </section>
 
-            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
+            <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
                 <AboutMe />
             </section>
         </>

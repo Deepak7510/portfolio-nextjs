@@ -10,8 +10,8 @@ import { APPLICATION_ROUTES } from '@/lib/client/routesConfig'
 const Navbar = () => {
     return (
         <nav className='font-medium'>
-            <NavigationMenu>
-                <NavigationMenuList >
+            <NavigationMenu >
+                <NavigationMenuList className='flex-col md:flex-row items-start md:justify-center' >
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
                             <Link href="/docs">Projects</Link>

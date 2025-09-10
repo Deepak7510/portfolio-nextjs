@@ -61,7 +61,7 @@ const AboutMe = () => {
                                     <h1 className='font-bold text-xl md:text-3xl'>
                                         Deepak Kumar Yadav
                                     </h1>
-                                    <Badge className='font-bold rounded-full text-xs md:text-sm'>Full-stack web developer</Badge>
+                                    <Badge className='font-semibold rounded-full text-xs'>Full-stack web developer</Badge>
                                 </div>
                             </div>
                             <p>

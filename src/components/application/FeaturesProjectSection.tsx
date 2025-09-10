@@ -17,7 +17,7 @@ const FeaturesProjectSection = ({ children }: { children: React.ReactNode }) => 
         }),
     };
     return (
-        <div className='flex flex-col justify-center items-center gap-7'>
+        <div className='flex flex-col justify-center items-center gap-4 md:gap-7'>
             <motion.h2
                 custom={0}
                 initial={textVariants.hidden}
