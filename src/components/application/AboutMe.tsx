@@ -9,6 +9,7 @@ import { Avatar } from '../ui/avatar';
 import me from '../../../public/me.jpg'
 import Image from 'next/image';
 import { Badge } from '../ui/badge';
+import { Separator } from '../ui/separator';
 
 const AboutMe = () => {
     const textVariants: any = {
@@ -24,13 +25,13 @@ const AboutMe = () => {
         }),
     };
     return (
-        <div className='flex flex-col justify-center items-center gap-5'>
+        <div className='flex flex-col justify-center items-center gap-2 md:gap-5'>
             <motion.h2
                 custom={0}
                 initial={textVariants.hidden}
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
-                className='font-bold text-4xl'>
+                className='font-bold text-2xl md:text-3xl text-center xl:text-4xl'>
                 About Me
             </motion.h2>
             <motion.p
@@ -38,7 +39,7 @@ const AboutMe = () => {
                 initial={textVariants.hidden}
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
-                className='text-xl'
+                className='text-base md:text-xl text-center'
             >
                 Get to know the person behind DevNexa
             </motion.p>
@@ -49,20 +50,19 @@ const AboutMe = () => {
                 viewport={{ once: true }}
                 className='w-full'>
                 <Card className='border-purple-100 dark:border-purple-700 bg-purple-50 dark:bg-purple-900/20'>
-                    <CardContent className='flex justify-between w-full gap-4'>
-                        <div className='p-5 w-[70%] space-y-6'>
+                    <CardContent className='md:flex justify-between w-full gap-4'>
+                        <div className='p-1 md:p-5 md:w-[70%] space-y-3 md:space-y-6'>
                             <div className='flex gap-4 items-center'>
-                                <Avatar className='h-20 w-20 border-3 shadow-lg border-black dark:border-white'>
+                                <Avatar className='h-16 w-16 md:h-20 md:w-20 border-3 shadow-lg border-black dark:border-white'>
                                     {/* <AvatarFallback></AvatarFallback> */}
                                     <Image src={me} alt='me' fill className='object-cover' />
                                 </Avatar>
                                 <div className='space-y-1'>
-                                    <h1 className='font-bold text-3xl'>
+                                    <h1 className='font-bold text-xl md:text-3xl'>
                                         Deepak Kumar Yadav
                                     </h1>
-                                    <Badge className='font-bold'>Full-stack web developer</Badge>
+                                    <Badge className='font-bold rounded-full text-xs md:text-sm'>Full-stack web developer</Badge>
                                 </div>
-
                             </div>
                             <p>
                                 I am passionate about building scalable, modern, and user-friendly web applications. With hands-on experience in full-stack development, I create projects that solve real-world problems while focusing on performance, clean code, and best practices.
@@ -73,7 +73,8 @@ const AboutMe = () => {
                             <Button>Learn more about me →</Button>
                         </div>
 
-                        <div className='flex flex-col justify-center w-[30%] gap-3'>
+                        <Separator className='md:hidden' />
+                        <div className='flex flex-col justify-center md:w-[30%] gap-3 py-5'>
                             <Button variant={"outline"} size={"lg"}>
                                 <Linkedin className='h-5! w-5!' />
                                 <span> LinkedIn</span>

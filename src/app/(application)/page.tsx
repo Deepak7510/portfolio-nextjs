@@ -5,27 +5,43 @@ import CompilerSection from '@/components/application/CompilerSection'
 import FeaturesProjectSection from '@/components/application/FeaturesProjectSection'
 import FeaturesProjects from '@/components/application/FeaturesProjects'
 import AboutMe from '@/components/application/AboutMe'
+import ProcessSection from '@/components/application/ProcessSection'
+import AboutDevNexaSection from '@/components/application/AboutDevNexaSection'
+import OurTeamSection from '@/components/application/OurTeamSection'
 const HomePage = () => {
 
 
     return (
         <>
             {/* hero section  */}
-            <section className='w-full px-2 md:px-20 py-16 relative'>
+            <section className='w-full px-3 md:px-10 xl:px-20 py-16 relative'>
                 <Button variant={"secondary"} className='dark:border-slate-700 animate-bounce rounded-full absolute top-4 right-4'>Download CV</Button>
                 <HeroSection />
             </section>
 
-            <section className='w-full px-2 md:px-20 mb-15 mt-10 relative'>
+            <section className='w-full px-3 md:px-10 xl:px-20 mb-15 mt-10'>
                 <CompilerSection />
             </section>
-            <section className='w-full px-2 md:px-20 my-15 relative'>
+
+            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
                 <FeaturesProjectSection>
                     <FeaturesProjects />
                 </FeaturesProjectSection>
             </section>
 
-            <section className='w-full px-2 md:px-20 my-15 relative'>
+            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
+                <ProcessSection />
+            </section>
+
+            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
+                <AboutDevNexaSection />
+            </section>
+
+            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
+                <OurTeamSection />
+            </section>
+
+            <section className='w-full px-3 md:px-10 xl:px-20  my-15 xl:my-20'>
                 <AboutMe />
             </section>
         </>

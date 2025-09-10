@@ -9,7 +9,7 @@ type ApplicationLayoutProps = {
 const ApplicationLayout = ({ children }: ApplicationLayoutProps) => {
     return (
         <div >
-            <Header />
+            {/* <Header /> */}
             <main className='max-w-[1600px] mx-auto pt-18'>
                 {children}
             </main>
