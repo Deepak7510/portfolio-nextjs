@@ -1,5 +1,5 @@
 import React from 'react'
-import { SolutionSection } from '@/components/application/SolutionSection';
+import { SolutionSection } from '@/components/application/SolutionSection'
 
 const ServicesPage = () => {
     return (

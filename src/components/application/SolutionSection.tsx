@@ -8,7 +8,7 @@ import {
     Building2, Palette, BarChart3, Handshake
 } from "lucide-react";
 
-type serviceType = {
+export type serviceType = {
     id: number;
     title: string;
     description: string
@@ -83,7 +83,8 @@ export const SolutionSection = () => {
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
                 className='font-bold text-2xl md:text-3xl text-center xl:text-4xl'>
-                Your Complete Digital Solutions Partner            </motion.h2>
+                Your Complete Digital Solutions Partner
+            </motion.h2>
             <motion.p
                 custom={1}
                 initial={textVariants.hidden}
