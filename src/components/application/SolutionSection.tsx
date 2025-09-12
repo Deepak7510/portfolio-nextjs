@@ -16,7 +16,7 @@ type serviceType = {
     button: string;
 }
 
-export const services: serviceType[] = [
+const services: serviceType[] = [
     {
         id: 1,
         icon: Monitor,
