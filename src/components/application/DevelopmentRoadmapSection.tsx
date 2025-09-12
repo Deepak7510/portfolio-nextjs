@@ -29,7 +29,7 @@ const roadmapData: roadmapDataType[] = [
         id: 2,
         title: "Backend Development",
         description:
-            "Learn how the web works behind the scenes—APIs, databases, authentication, and server-side programming to power real apps.",
+            "Master how the web works behind the scenes—covering APIs, databases, authentication, and server-side programming to build real-world applications",
         icon: Database,
         button: "Explore",
         color:
@@ -72,12 +72,12 @@ export const DevelopmentRoadmapSection = () => {
                 Interactive Development Roadmaps
             </motion.h2>
             <motion.p
-                custom={2}
+                custom={1}
                 initial={textVariants.hidden}
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
                 className='text-base md:text-xl text-center max-w-4xl'>
-                Our first major feature is now live! Explore comprehensive, step-by-step roadmaps for various development paths to guide your learning journey.
+                Our first major feature is live! Dive into interactive, step-by-step roadmaps designed to simplify complex development processes and guide you from concept to completion
             </motion.p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
@@ -86,9 +86,9 @@ export const DevelopmentRoadmapSection = () => {
                     return (
                         <motion.div
                             key={item.id}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.2, duration: 0.5 }}
+                            custom={2 + index}
+                            initial={textVariants.hidden}
+                            whileInView={textVariants.visible}
                             viewport={{ once: true }}
                         >
                             <Card

@@ -25,7 +25,7 @@ const approachData: approachDataType[] = [
         id: 1,
         title: "Hands-On Development Experience",
         description:
-            "I design and build real-world websites and mobile apps with a focus on performance, scalability, and user experience—crafted to match industry standards.",
+            "I design and build real-world websites with a focus on performance, scalability, and user experience—crafted to match industry standards.",
         icon: Code,
         color: "border-violet-200 dark:border-violet-700 bg-violet-50 dark:bg-violet-900/20", // Blue
     },
@@ -41,7 +41,7 @@ const approachData: approachDataType[] = [
         id: 3,
         title: "Grow: Scale Your Business",
         description:
-            "Take your brand or project to the next level with tailored web and app solutions that not only work but help you succeed in the digital world.",
+            "Take your brand or project to the next level with tailored web solutions that not only work but help you succeed in the digital world.",
         icon: TrendingUp,
         color: "border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20", // Blue
     },
@@ -117,7 +117,7 @@ const ProcessSection = () => {
                         <div className='flex flex-col items-start justify-center md:w-[50%] gap-4 md:gap-8 py-4 md:py-20'>
                             <h1 className='font-semibold text-2xl'>Why Choose DevNexa?</h1>
                             <p className='max-w-md'>
-                                I’m not just building a portfolio — I deliver professional Web and App Development services.
+                                I’m not just building a web — I deliver professional Web Development services.
                                 From responsive websites to powerful mobile applications, I create solutions that are modern, scalable, and user-friendly.                                </p>
                             <Button variant={"outline"} className='text-cyan-400 rounded-full'>Let&apos;s Start</Button>
                         </div>

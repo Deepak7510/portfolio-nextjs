@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Badge } from '../ui/badge';
 import { Separator } from '../ui/separator';
 
-const AboutMe = () => {
+const AboutMeSection = () => {
     const textVariants: any = {
         hidden: { opacity: 0, y: 20 },
         visible: (i: any) => ({
@@ -48,12 +48,11 @@ const AboutMe = () => {
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
                 className='w-full'>
-                <Card className='border-purple-100 dark:border-purple-700 bg-purple-50 dark:bg-purple-900/20'>
-                    <CardContent className='md:flex justify-between w-full gap-4'>
-                        <div className='p-1 md:p-5 md:w-[70%] space-y-3 md:space-y-6'>
+                <Card className='border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/20'>
+                    <CardContent className='md:flex justify-between w-full'>
+                        <div className='md:p-5 md:w-[60%] space-y-3 md:space-y-4'>
                             <div className='flex gap-4 items-center'>
                                 <Avatar className='h-16 w-16 md:h-20 md:w-20 border-3 shadow-lg border-black dark:border-white'>
-                                    {/* <AvatarFallback></AvatarFallback> */}
                                     <Image src={me} alt='me' fill className='object-cover' />
                                 </Avatar>
                                 <div className='space-y-1'>
@@ -64,16 +63,20 @@ const AboutMe = () => {
                                 </div>
                             </div>
                             <p>
-                                I am passionate about building scalable, modern, and user-friendly web applications. With hands-on experience in full-stack development, I create projects that solve real-world problems while focusing on performance, clean code, and best practices.
+                                I’m a MERN Stack Developer with hands-on experience in building secure, scalable, and user-friendly web applications. I’ve worked on projects ranging from Learning Management Systems and E-Commerce Platforms to Blog Applications, delivering real-world solutions with modern technologies like React, Next.js, Node.js, Express.js, and MongoDB.
                             </p>
                             <p>
-                                Alongside development, I enjoy sharing knowledge and helping others grow through tutorials, project builds, and practical guidance. My goal is to empower aspiring developers and make quality education accessible, while continuously learning and evolving in the ever-changing world of web development.
+                                As a passionate learner and builder, I enjoy exploring system design, clean architecture, and modern UI/UX practices while continuously improving performance and scalability. I’ve also worked with third-party integrations such as Razorpay for payments and Cloudinary for media management, ensuring smooth digital experiences.
+                            </p>
+                            <p>
+                                Through my journey, I’ve discovered a strong interest in sharing knowledge and guiding others. I aim to empower aspiring developers by providing practical guidance, project builds, and structured learning resources.
                             </p>
                             <Button>Learn more about me →</Button>
                         </div>
 
-                        <Separator className='md:hidden' />
-                        <div className='flex flex-col justify-center md:w-[30%] gap-3 py-5'>
+                        <Separator className='md:hidden my-4' />
+
+                        <div className='flex flex-col justify-center md:w-[40%] gap-3 md:gap-6 md:p-5'>
                             <Button variant={"outline"} size={"lg"}>
                                 <Linkedin className='h-5! w-5!' />
                                 <span> LinkedIn</span>
@@ -98,11 +101,11 @@ const AboutMe = () => {
                     </CardContent>
                 </Card>
             </motion.div>
-        </div>
+        </div >
     )
 }
 
-export default AboutMe
+export default AboutMeSection
 
 
 

@@ -1,17 +1,15 @@
+import { Code } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
 const ApplicationLogo = () => {
     return (
         <div>
-            {/* <div className='h-10 w-40'>
-                <Image src={ } fill />
-            </div> */}
-            <Link href={'/'} className='text-xl md:text-2xl font-bold'>
-                DevNexa
+            <Link href={'/'} className='text-xl md:text-2xl font-bold flex items-center gap-2'>
+                <Code className='h-6 w-6 md:h-7 md:w-7' />
+                <span>DevNexa</span>
             </Link>
         </div>
-
     )
 }
 

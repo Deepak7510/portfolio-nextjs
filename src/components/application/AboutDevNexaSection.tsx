@@ -25,7 +25,7 @@ const aboutDevNexaData: aboutDevNexaDataType[] = [
         id: 1,
         title: "Who We Are: About DevNexa",
         description:
-            "A platform dedicated to building modern web and app solutions, crafted to empower businesses and individuals.",
+            "A platform dedicated to building modern web solutions, crafted to empower businesses and individuals.",
         icon: Users,
         color:
             "border-violet-200 dark:border-violet-700 bg-violet-50 dark:bg-violet-900/20",
@@ -34,7 +34,7 @@ const aboutDevNexaData: aboutDevNexaDataType[] = [
         id: 2,
         title: "Build: Turn Ideas into Reality",
         description:
-            "From responsive websites to feature-rich apps, we transform ideas into powerful digital products.",
+            "From responsive websites to feature-rich web apps, we transform ideas into powerful digital products.",
         icon: Laptop,
         color:
             "border-yellow-200 dark:border-yellow-700 bg-yellow-50 dark:bg-yellow-900/20",
@@ -76,7 +76,7 @@ const AboutDevNexaSection = () => {
                 Empowering Businesses, Enabling Ideas
             </motion.h1>
 
-            <motion.div custom={2}
+            <motion.div custom={1}
                 initial={textVariants.hidden}
                 whileInView={textVariants.visible}
                 viewport={{ once: true }}
@@ -87,7 +87,7 @@ const AboutDevNexaSection = () => {
                         <div className='flex flex-col items-start justify-center md:w-[50%] gap-4 md:gap-8 py-4 md:py-20'>
                             <h1 className='font-semibold text-xl md:text-2xl'>Who is DevNexa?</h1>
                             <p className='max-w-md'>
-                                DevNexa is a platform dedicated to delivering modern Web & App Development solutions.
+                                DevNexa is a platform dedicated to delivering modern Web Development solutions.
                                 We focus on creating scalable, user-friendly, and high-performance digital products that help individuals and businesses turn their ideas into reality.
                             </p>
                             <Button variant={"outline"} className='text-green-400 rounded-full'>Let&apos;s Start</Button>

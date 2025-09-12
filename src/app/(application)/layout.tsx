@@ -1,4 +1,4 @@
-// import Footer from '@/components/application/Footer'
+import Footer from '@/components/application/Footer'
 import Header from '@/components/application/Header'
 import React from 'react'
 
@@ -13,7 +13,7 @@ const ApplicationLayout = ({ children }: ApplicationLayoutProps) => {
             <main className='max-w-[1600px] mx-auto pt-18'>
                 {children}
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

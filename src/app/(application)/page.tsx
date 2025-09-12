@@ -4,12 +4,13 @@ import HeroSection from '@/components/application/HeroSection'
 import CompilerSection from '@/components/application/CompilerSection'
 import FeaturesProjectSection from '@/components/application/FeaturesProjectSection'
 import FeaturesProjects from '@/components/application/FeaturesProjects'
-import AboutMe from '@/components/application/AboutMe'
+import AboutMeSection from '@/components/application/AboutMeSection'
 import ProcessSection from '@/components/application/ProcessSection'
 import AboutDevNexaSection from '@/components/application/AboutDevNexaSection'
 import OurTeamSection from '@/components/application/OurTeamSection'
 import { DevelopmentRoadmapSection } from '@/components/application/DevelopmentRoadmapSection'
 import { SolutionSection } from '@/components/application/SolutionSection'
+import PricingSection from '@/components/application/PricingSection'
 
 const HomePage = () => {
 
@@ -44,6 +45,10 @@ const HomePage = () => {
             </section>
 
             <section className='w-full px-3 md:px-10 xl:px-20 mb-15 mt-10'>
+                <PricingSection />
+            </section>
+
+            <section className='w-full px-3 md:px-10 xl:px-20 mb-15 mt-10'>
                 <CompilerSection />
             </section>
 
@@ -52,7 +57,7 @@ const HomePage = () => {
             </section>
 
             <section className='w-full px-3 md:px-10 xl:px-20 my-15 xl:my-20'>
-                <AboutMe />
+                <AboutMeSection />
             </section>
         </>
     )

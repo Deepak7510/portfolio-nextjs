@@ -13,7 +13,7 @@ export function ModeToggle() {
 
     return (
         <Button onClick={handleTheme} variant="ghost" size="icon">
-            <Sun className="h-[1.2rem] w-[1.2rem]" />
+            <Sun className="h-[1.2raem] w-[1.2rem]" />
             <span className="sr-only">Toggle theme</span>
         </Button >
     )
