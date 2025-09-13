@@ -105,7 +105,7 @@ export const SolutionSection = () => {
                             viewport={{ once: true }}
                         >
                             <Card
-                                className={`h-full flex flex-col border border-skya-200 dark:border-skya-700 bg-skya-50 dark:bg-skya-900/20 rounded-2xl shadow-md`}
+                                className={`h-full flex flex-col border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/20 rounded-2xl shadow-md`}
                             >
                                 <CardContent className="flex flex-col gap-4 flex-1">
                                     <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow">

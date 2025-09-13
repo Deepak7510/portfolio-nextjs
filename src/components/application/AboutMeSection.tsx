@@ -5,10 +5,12 @@ import { Card, CardContent } from '../ui/card';
 import { Button } from '../ui/button';
 import { Facebook, Github, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { Avatar } from '../ui/avatar';
-import me from '../../../public/me.jpg'
+import me from '../../../public/me.png'
 import Image from 'next/image';
 import { Badge } from '../ui/badge';
 import { Separator } from '../ui/separator';
+import Link from 'next/link';
+import { APPLICATION_ROUTES } from '@/lib/client/routesConfig';
 
 const AboutMeSection = () => {
     const textVariants: any = {
@@ -71,7 +73,11 @@ const AboutMeSection = () => {
                             <p>
                                 Through my journey, I’ve discovered a strong interest in sharing knowledge and guiding others. I aim to empower aspiring developers by providing practical guidance, project builds, and structured learning resources.
                             </p>
-                            <Button>Learn more about me →</Button>
+                            <Button asChild>
+                                <Link href={APPLICATION_ROUTES.about}>
+                                    Learn more about me →
+                                </Link>
+                            </Button>
                         </div>
 
                         <Separator className='md:hidden my-4' />

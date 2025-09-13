@@ -82,7 +82,7 @@ const AboutDevNexaSection = () => {
                 viewport={{ once: true }}
                 className='w-full'
             >
-                <Card className='border-green-100 dark:border-green-700 bg-green-50 dark:bg-green-900/20'>
+                <Card className='bg-background dark:border-emerald-700 py-3 lg:py-6'>
                     <CardContent className='md:flex justify-between w-full gap-2 md:gap-4 px-3 lg:px-6'>
                         <div className='flex flex-col items-start justify-center md:w-[50%] gap-4 md:gap-8 py-4 md:py-20'>
                             <h1 className='font-semibold text-xl md:text-2xl'>Who is DevNexa?</h1>

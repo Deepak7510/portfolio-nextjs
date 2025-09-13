@@ -20,7 +20,7 @@ const Navbar = () => {
 
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link className='text-lg md:text-sm' href="/docs">Pricing</Link>
+                            <Link className='text-lg md:text-sm' href={APPLICATION_ROUTES.pricing}>Pricing</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
@@ -35,7 +35,7 @@ const Navbar = () => {
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
                         <NavigationMenuLink asChild>
-                            <Link className='text-lg md:text-sm' href={APPLICATION_ROUTES.about}>About</Link>
+                            <Link className='text-lg md:text-sm' href={APPLICATION_ROUTES.about}>About Me</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className='px-4 py-1.5' asChild>
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
-        </nav>
+        </nav >
     )
 }
 

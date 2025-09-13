@@ -79,7 +79,7 @@ const ProcessSection = () => {
                 viewport={{ once: true }}
                 className='w-full'
             >
-                <Card className='border-cyan-100 dark:border-cyan-700 bg-cyan-50 dark:bg-cyan-900/20 py-3lg:py-6'>
+                <Card className='bg-background dark:border-cyan-700 py-3 lg:py-6'>
                     <CardContent className='md:flex justify-between w-full gap-2 md:gap-4 px-3 lg:px-6'>
                         <div className='p-1 md:w-[50%] flex justify-center items-center'>
                             <Carousel

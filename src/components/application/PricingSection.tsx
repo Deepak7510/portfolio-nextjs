@@ -31,7 +31,7 @@ export const pricingPlans: pricingPlanType[] = [
             "1 Month Free Support",
         ],
         popular: false,
-        color: "border-blue-200 bg-blue-50 dark:border-blue-700 dark:bg-blue-900/20",
+        color: "bg-blue-50 border-blue-200 dark:border-blue-700 dark:bg-background",
     },
     {
         id: 2,
@@ -48,7 +48,7 @@ export const pricingPlans: pricingPlanType[] = [
             "3 Months Free Support",
         ],
         popular: true,
-        color: "border-purple-200 bg-purple-50 dark:border-purple-700 dark:bg-purple-900/20",
+        color: "bg-purple-50 border-purple-200 dark:border-purple-700 dark:bg-background",
     },
     {
         id: 3,
@@ -65,7 +65,7 @@ export const pricingPlans: pricingPlanType[] = [
             "6 Months Premium Support",
         ],
         popular: false,
-        color: "border-green-200 bg-green-50 dark:border-green-700 dark:bg-green-900/20",
+        color: "bg-green-50 border-green-200 dark:border-green-700 dark:bg-background",
     },
 ];
 

@@ -1,8 +1,9 @@
 export const APPLICATION_ROUTES = {
   home: "/",
   services: "/services",
-  about: "/about",
+  about: "/about-me",
   contact: "/contact",
+  pricing: "/pricing",
 };
 
 export const ADMIN_ROUTES = {
